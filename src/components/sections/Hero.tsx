@@ -60,7 +60,7 @@ const HeroSection = () => {
   const particleItems = Array.from({ length: 8 }, (_, i) => i);
 
   return (
-    <div className="relative w-full overflow-hidden bg-gradient-to-r from-gray-900 to-gray-800 text-white min-h-screen">
+    <div className="relative w-full overflow-hidden bg-gradient-to-r from-gray-900 to-gray-800 text-white min-h-screen pb-10">
       {/* Animated background grid */}
       <div className="absolute inset-0 grid grid-cols-8 grid-rows-8 gap-4 opacity-5">
         {gridItems.map((i) => (
@@ -69,7 +69,7 @@ const HeroSection = () => {
           </div>
         ))}
       </div>
-      
+    
       {/* Floating security elements - Reducidos en móvil */}
       <div className="absolute inset-0 overflow-hidden">
         {floatingItems.map((i) => {
