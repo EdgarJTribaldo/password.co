@@ -109,7 +109,7 @@ const HeroSection = () => {
         </div>
         
         <p className="mt-6 md:mt-8 text-lg md:text-xl lg:text-2xl font-light max-w-3xl px-2">
-          Su aliado especializado en 
+          Su aliado especializado en<br/>
           <span className="relative">
             <span className="absolute top-0 left-0 h-full w-full bg-gradient-to-r from-primary to-blue-300 opacity-25 rounded"></span>
             <span className="relative text-primary font-medium"> seguridad digital</span>
