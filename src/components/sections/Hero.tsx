@@ -42,14 +42,14 @@ const HeroSection = () => {
     }
   }, [animatedText, isTyping, currentPhraseIndex]);
 
-  const SecurityIcon = ({ index, className }) => {
+  const SecurityIcon = ({ index, className }: { index: number, className: string }) => {
     const icons = [
-      <Shield className={className} />,
-      <Lock className={className} />,
-      <Key className={className} />,
-      <Code className={className} />,
-      <Server className={className} />,
-      <Eye className={className} />
+      <Shield className={className} key="shield" />,
+      <Lock className={className} key="lock" />,
+      <Key className={className} key="key" />,
+      <Code className={className} key="code" />,
+      <Server className={className} key="server" />,
+      <Eye className={className} key="eye" />
     ];
     return icons[index % icons.length];
   };
@@ -109,7 +109,7 @@ const HeroSection = () => {
         </div>
         
         <p className="mt-6 md:mt-8 text-lg md:text-xl lg:text-2xl font-light max-w-3xl px-2">
-          Su aliado especializado en <br/>
+          Su aliado especializado en 
           <span className="relative">
             <span className="absolute top-0 left-0 h-full w-full bg-gradient-to-r from-primary to-blue-300 opacity-25 rounded"></span>
             <span className="relative text-primary font-medium"> seguridad digital</span>
@@ -200,7 +200,7 @@ const HeroSection = () => {
       </div>
       
       {/* Estilos para la animación - Agregado aquí para que funcione correctamente */}
-      <style jsx>{`
+      <style>{`
         @keyframes float {
           0%, 100% {
             transform: translateY(0) rotate(0deg);
